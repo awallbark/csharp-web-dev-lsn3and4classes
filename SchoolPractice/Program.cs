@@ -15,7 +15,9 @@ namespace SchoolPractice
             Toni.AddGrade(4, 4.0);
             Toni.AddGrade(4, 3.0);
 
-            Console.WriteLine(Toni.Equals(Aaron)); 
+            Console.WriteLine(Toni.Equals(Aaron));
+
+            Console.WriteLine(Toni.ToString());
 
         }
     }
