@@ -11,9 +11,9 @@ namespace SchoolPractice
 
             Console.WriteLine(Toni.GetGradeLevel());
 
-            Toni.NumberOfCredits = 40;
+            Toni.AddGrade(4, 4.0);
+            Toni.AddGrade(4, 3.0);
 
-            Console.WriteLine(Toni.GetGradeLevel());
         }
     }
 }
