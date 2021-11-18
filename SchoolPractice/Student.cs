@@ -73,7 +73,30 @@ namespace SchoolPractice
             else return "Senior";
         }
 
+        public override bool Equals(object obj)
+        {
+            //Reference Check
+            if (obj == this)
+            {
+                return true;
+            }
+            //Null check
+            if (obj == null)
+            {
+                return false;
+            }
+            //Class check
+            if (obj.GetType() != this.GetType())
+            {
+                return false;
+            }
+            //Cast
+            Student s = obj as Student;
 
+            //Comparison
+            return obj is Student student &&
+                   studentId == student.studentId;
+        }
     }
 
 }
