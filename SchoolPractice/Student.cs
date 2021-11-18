@@ -97,6 +97,11 @@ namespace SchoolPractice
             return obj is Student student &&
                    studentId == student.studentId;
         }
+
+        public override string ToString()
+        {
+            return Name + " (StudentId: " + studentId + " Credits: " + NumberOfCredits + ", GPA: " + Gpa + ")";
+        }
     }
 
 }
