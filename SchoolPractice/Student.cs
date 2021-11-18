@@ -45,7 +45,14 @@ namespace SchoolPractice
 
         public void AddGrade(int courseCredits, double grade)
         {
-            // Update the appropriate fields: NumberOfCredits, Gpa
+           
+            double currentQualityScore = Gpa * NumberOfCredits;
+            double totalQualityScore = (courseCredits * grade) + currentQualityScore;
+            double totalNumberofCredits = this.NumberOfCredits + courseCredits;
+            double newGpa = Math.Round((totalQualityScore / totalNumberofCredits), 2);
+
+            Console.WriteLine(newGpa);
+
         }
 
         public string GetGradeLevel()
